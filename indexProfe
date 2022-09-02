@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Segunda forma -->
+		<!-- <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="  -->
+		<!-- crossorigin="anonymous"></script> -->
+		<!-- Otra forma -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<script src="js/jquery-3.6.1.min.js"></script>
+		<title>JavaScript (JQuery)</title>
+	</head>
+	<body>	
+		<h2 id="titulo">Titulo de la pagina</h2>
+		<!-- <p id="cuerpo1">Cuerpo de la página esto es <strong>Importante</strong></p> -->
+		<p class="parrafos">Cuerpo secundario de la página</p>
+
+	</body>
+	<script>
+		// Afectar a etiquetas del DOM
+		// $('p').metodo(parametro)
+		// Afectar por ID (#)
+		// $('#titulo').metodo(parametro)
+		// Afectar por clase (.)
+		// $('.parrafos').metodo(parametro)
+
+		// Método text
+		// var msg = $('#cuerpo').text()
+
+		// Método html
+		// var msg2 = $('#cuerpo1').html()
+		// alert(msg2)
+		// $('#cuerpo1').html('Ahora el cuerpo de la página tiene <em> Itálica </em>')
+
+		// Eventos
+		$(document).ready(inicializar)
+
+		function inicializar() {
+			$('p').click(alertarclk)
+			$('p').dblclick(alertardblclick)
+			$('h2').mouseover(mousearr)
+			$('h2').mouseout(mousefr)
+		}
+
+		function alertarclk(){
+			alert('Hiciste click')
+		}
+
+		function alertardblclick() {
+			alert('Hiciste doble click')
+		}
+
+		function mousearr() {
+			alert('Pasaste el cursor sobre un etiqueta')
+		}
+		
+		function mousefr() {
+			alert('Quitaste el cursor de la etiqueta')
+		}
+	</script>
+</html>

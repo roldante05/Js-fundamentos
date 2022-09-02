@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <style>
+        img {
+            width: 80px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+
+        .a {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        img:hover{
+            transform: scale(1.2);
+
+        }
+        .text-center {
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <title>Ejercicios</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="text-center mt-3 ">
+                <h1 class="my-3">Bienvenido a Lightbox</h1>
+            </div>
+            <div class="a d-flex justify-content-center bg-secondary">
+
+                <a data-lightbox="empleados" href="imagenes/empleado01-grande.png"> <img src="imagenes/empleado01.png"
+                        alt=""> </a>
+                <a data-lightbox="empleados" href="imagenes/empleado02-grande.png"> <img src="imagenes/empleado02.png"
+                        alt=""> </a>
+                <a data-lightbox="empleados_area2" href="imagenes/empleado03-grande.png"> <img
+                        src="imagenes/empleado03.png" alt=""> </a>
+                <a data-lightbox="empleados_area2" href="imagenes/empleado04-grande.png"> <img
+                        src="imagenes/empleado04.png" alt=""> </a>
+            </div>
+            <div>
+                <p>Lightbox es una libreria propia de Javascript, en la cual esta libreria, te perimite hacer con imagenes
+                    animaciones, en este caso El efecto Lightbox nos permite hacer que, al pinchar en un texto o imagen, se abra una cuadro de diálogo con una imagen, un vídeo o un audio.
+           
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="jquery-3.6.1.min.js">  </script>
+<script src="js/lightbox.js">
+
+</script>
+
+</html>
