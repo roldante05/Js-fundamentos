@@ -9,6 +9,17 @@ tabla();
 
 }
 
+document.querySelector('.botonEliminar').onclick = function(){
+    var nombreI = document.querySelector('#txtNombre');
+    var apellidoI = document.querySelector('#txtApellido') ;
+    var edadI = document.querySelector('#numEdad') ;
+    nombreI.value = "";
+    apellidoI.value = "";
+    edadI.value = "";
+
+    
+}
+
 function agregar() {
     var nombreI = document.querySelector('#txtNombre').value ;
     var apellidoI = document.querySelector('#txtApellido').value ;

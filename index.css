@@ -1,3 +1,13 @@
 .modal{
     height: 70%;
 }
+
+
+.content{
+    border-radius: 15px;
+}
+
+
+body{
+    font-weight: 600;
+}

@@ -6,7 +6,7 @@
 
  function saludar(color){
 document.querySelector('input').value = "El color es " + color;
-document.querySelector('.content').style.background = color;
+// document.querySelector('.content').style.background = color;
 document.querySelector('.input').style.background = color;
 document.querySelector('.input').style.color = "white";
 
