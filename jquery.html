@@ -16,7 +16,7 @@
             margin: 0px 0px;
         }
 
-        .a {
+        .content {
             padding-top: 100px;
             padding-bottom: 100px;
         }
@@ -33,7 +33,8 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="index.css">
+    </head>
 
 <body>
     <div class="container">
@@ -41,7 +42,7 @@
             <div class="text-center mt-3 ">
                 <h1 class="my-3">Bienvenido a Lightbox</h1>
             </div>
-            <div class="a d-flex justify-content-center bg-light">
+            <div class="content d-flex justify-content-center">
 
                 <div class="mx-1">
                     <a data-lightbox="roadtrip" href="imagenes/empleado01-grande.png"> <img src="imagenes/empleado01.png"alt=""> </a>
@@ -61,6 +62,17 @@
                     animaciones, en este caso El efecto Lightbox nos permite hacer que, al pinchar en un texto o imagen, se abra una cuadro de diálogo con una imagen, un vídeo o un audio.
            
                 </p>
+                <div class="col-sm-6">
+
+                    <input type="text" class="form-control col-sm-5" disabled>
+                <button class="btn">White</button>
+                <button class="btn btn-outline-danger">Red</button>
+                <button class="btn btn-outline-primary">Blue</button>
+                <button class="btn btn-outline-warning">Yellow</button>
+                <button class="btn btn-outline-success">Green</button>
+                <button class="btn">Pink</button>
+                <button class="btn btn-outline-secondary">Grey</button>
+            </div>
             </div>
 
 
@@ -98,16 +110,6 @@
                     </table>
                 </div>
             </div>
-
-            <!-- <input type="text" disabled>
-            <button>White</button>
-            <button>Red</button>
-            <button>Blue</button>
-            <button>Yellow</button>
-            <button>Green</button>
-            <button>Pink</button>
-            <button>Grey</button> -->
-
         </div>
     </div>
 
