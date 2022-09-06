@@ -1,4 +1,4 @@
- 
+
 
 
  var botones = document.getElementsByTagName('button');

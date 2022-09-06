@@ -91,7 +91,7 @@
 
 
             <!-- <div class="row justify-content-between my-4"> -->
-                <div id="form" class="modal">
+                <div id="form" class="modal row">
         
                     <!-- <form action=""> -->
                         <div class="">
@@ -106,10 +106,10 @@
                             <label for="numEdad">Edad</label>
                             <input type="text" name="numEdad" id="numEdad" class="form-control">
                         </div>
-                        <div class="my-3">
+                        <div class="my-3 col-sm-12">
 
-                            <a class="boton text-white btn btn-primary" href="#" rel="modal:close">Agregar</a>
-                            <a class="botonEliminar btn btn-secondary">Limpiar</a>
+                            <a class="col-sm-5 boton text-white btn btn-primary" href="#" rel="modal:close">Agregar</a>
+                            <a class="col-sm-5  botonEliminar btn btn-secondary">Limpiar</a>
                         </div>
                     <!-- </form> -->
                 </div>
@@ -123,7 +123,8 @@
                         </tr>
                     </table>
                     <div class="my-3">
-                        <a class="col-sm-6 btn btn-primary" href="#form" rel="modal:open">Agregar</a>
+                        <a class="col-sm-5 ms-5 btn btn-primary" href="#form" rel="modal:open">Agregar</a>
+                        <a id="hiden" class="col-sm-5  btn btn-secondary">Desaparecer</a>
                             </div>
                 </div>
             </div>
@@ -132,10 +133,34 @@
 
 
 </body>
-<script src="Fundamentos-JS/ejercicioOcho.js"></script>
 <script src="Fundamentos-JS/ejercicioNuev.js"></script>
-<script src="jquery/jquery-3.6.1.min.js">  </script>
+<script src="Fundamentos-JS/ejercicioOcho.js"></script>
+<script src="jquery/jquery-3.6.1.min.js"></script>  
 <script src="jquery/jquery.modal.min.js"></script>
 <script src="Lightbox/js/lightbox.js"></script>
+<script>
+    function show(){
+    $('.tabla').show();
+    $('#hiden').text("Desaparecer");
+}
+function hiden(){
+    $('.tabla').hide();
+$('#hiden').text("Aparecer");
+}
+
+let accion = 0;
+
+$('#hiden').click(function(){
+
+    if(accion == 0){
+        hiden();
+        accion = 1;
+    } else {
+        show();
+        accion = 0;
+    }
+
+}) 
+</script>
 
 </html>
