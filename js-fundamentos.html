@@ -16,6 +16,12 @@
             width: 327px;
             border: 1px solid black;
             transition: 0.5s;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        h1, p{
+            color: white;
         }
 
         a {
@@ -29,7 +35,7 @@
         }
 
         img:hover{
-            z-index: 1.5;
+            z-index: 1.20;
             transform: scale(1.2);
 
         }
@@ -51,23 +57,23 @@
             <div class="text-center mt-3 ">
                 <h1 class="my-3">Bienvenido a Lightbox</h1>
             </div>
-            <div class="content d-flex justify-content-center">
+            <div class="content  d-sm-flex justify-content-md-around justify-content-sm-around ">
 
-                <div class="mx-1">
+                <div class="mx-1 d-none d-sm-block">
                     <a data-lightbox="roadtrip" href="imagenes/santanderUno.jpeg"> <img src="imagenes/santanderUno.jpeg"alt=""> </a>
                 </div>
-                <div class="mx-1">
+                <div class="mx-1 d-none d-sm-block">
                     <a data-lightbox="roadtrip" href="imagenes/santanderCinco.jpeg"> <img src="imagenes/santanderCinco.jpeg"alt=""> </a>
                 </div>
-                <div class="mx-1">
+                <div class="mx-1 ms-4 mb-3">
                     <a data-lightbox="roadtrip" href="imagenes/santanderTres.jpeg"><img src="imagenes/santanderTres.jpeg" alt=""> </a>
                 </div>
-                <div class="mx-1">
+                <div class="mx-1 ms-4 ">
                     <a data-lightbox="roadtrip" href="imagenes/santanderCuatro.jpeg"> <img src="imagenes/santanderCuatro.jpeg" alt=""> </a>
                 </div>
             </div>
            
-            <div class="my-4">
+            <div class="mb-4">
                 <p>Lightbox es una libreria propia de Javascript, en la cual esta libreria, te perimite hacer con imagenes
                     animaciones, en este caso El efecto Lightbox nos permite hacer que, al pinchar en un texto o imagen, se abra una cuadro de diálogo con una imagen, un vídeo o un audio.
            
@@ -79,7 +85,7 @@
                     </div>
                     <div class="col-sm-6">
                         
-                        <button class="btn">White</button>
+                        <button class="btn btn-light">White</button>
                         <button class="btn btn-outline-danger">Red</button>
                         <button class="btn btn-outline-primary">Blue</button>
                         <button class="btn btn-outline-warning">Yellow</button>

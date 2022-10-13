@@ -10,4 +10,25 @@
 
 body{
     font-weight: 600;
+    background-image: url(https://img.freepik.com/free-photo/black-concrete-wall_24972-1046.jpg?w=740&t=st=1662429952~exp=1662430552~hmac=d565caf176bcaad5d151ee7914771b72a18af6763852961f76ab2f8f3e9469f7);
+    background-size: cover;
+}
+.container{
+    }
+
+@media (max-width: 700px){
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+.content .row div {
+    width: 300px;
+}
+
+    img{
+        width: 300px;
+    }
+
 }
